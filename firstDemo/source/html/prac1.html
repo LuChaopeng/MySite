@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>练习1-CSS基本特性和简写属性</title>
+        <link rel="stylesheet" href="../styles/templateStyle.css" type="text/css">  
+        <link rel="stylesheet" href="../styles/prac1.css" type="text/css"> 
+    </head>
+    <body>
+        <header>
+            <h1>练习1-CSS基本特性和简写属性</h1>
+            <p>在下面的区域进行练习，或回到<a href="../../index.html">首页</a></p>
+        </header>
+        <hr/>
+        <div id="pracArea">
+            <div id="item1" class="item">
+                <h2>a标签的颜色继承</h2>
+                <p>这里是一个指向首页的<a href="../../index.html" id="link1">a标签</a>即一个超链接。在body的css里我们给color属性设置成了黄绿色#3c3，但可以看到这个链接并未继承div id="item1"的color，而是用户代理样式默认的颜色。我们在第二个<a href="../../index.html" id="link2">a标签</a>中显式地设置继承div id="item1"，可以看到这时的颜色为黄绿色。继续，我们在第三个<a href="../../index.html" id="link3">a标签</a>中设置color为initial，color被还原为了初始值black.</p>
+            </div>
+            <div id="item2" class="item">
+                <h2>简写属性</h2>
+                <pre>
+                    a. 简写属性会默认覆盖其他样式
+                    i. 大多数简写属性可以省略一些值，但省略的值仍然会被隐式地设置为初始值，这样可能会默默覆盖了在其他地方定义的样式
+                    ii. 因为font简写属性设置的值太多，所以它的覆盖问题也最严重，避免在body元素的样式外使用font
+                b. 简写值的顺序
+                一些属性值很模糊，如果不按照顺序无法确定
+                    i. 上、右、下、左：
+                    ①像margin、padding这样的属性须按照top right bottom left的顺序。
+                    ②这些属性可以继续缩写，如果4个属性值有未指定的，那么它会取对边的值。
+                    ③多数情况下指定两个值即可。
+                    ii. 水平、垂直
+                    ①一些属性最多支持2个值，包括 background-position、box-shadow、text-shadow（严格讲不是简写属性）<span style="color:red;text-decoration:underline;font-weight: bold;">其实跟简写没有关系，这里强调的应该是先后顺序</span>
+                    ②它们的第一个值指定水平方向上的偏移量，第二个指定垂直方向的偏移量（笛卡尔坐标）
+                </pre>
+                <p><strong>注意：</strong>使用&lt;pre&gt;标签时，保留了格式，但在手机上看时发生了溢出（尽管其他的响应设计做的也不好），这里对溢出进行处理</p>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+/*item1部分的样式表*/
+.item{
+    color: #3c3;
+    padding: 0 2%;
+    font-size: large;
+}
+#link2{
+    color:inherit;
+}
+#link3{
+    color:initial;
+}
+
+/*item2*/
+pre{
+    box-shadow: 1em 0.5em ;
+    overflow-x: auto;
+}

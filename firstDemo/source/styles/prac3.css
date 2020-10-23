@@ -1,0 +1,54 @@
+*,::before,::after{
+    box-sizing:border-box;
+}
+header{
+    margin: 0;
+    padding: 0.5em 0;
+    background-color: #999999;
+    text-align: center;
+    border-radius: 15%;
+}
+#pracArea{
+    width: 96%;
+    margin: auto;
+}
+#pracArea::after{
+    content:"";
+    display: block;
+    margin-bottom: 2em;
+}
+/*item1*/
+.table{
+    display: table;
+    padding: 3vw;
+    border-radius: 1em;
+    background-color: lightgrey;
+    width: 90vw;
+}
+
+.tableCell{
+    border: solid 3px;
+    display: table-cell;
+    background-color: white;
+    min-width: 15vw;
+    max-width: 25vw;
+}
+
+/*item2*/
+.item2 .setPadding{
+    width: 25%;
+    border:solid 2px;
+    padding: 4em 0;
+}
+.tableCellMiddle{
+    vertical-align: middle;
+}
+
+.chDivLineHeight{  
+    border: solid 2px;
+
+}
+.chLineHeight{
+    border: solid 2px;
+    line-height: 4em;
+}

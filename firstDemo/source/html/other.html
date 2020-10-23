@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey Form</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../styles//other.css" type="text/css">
+    </head>
+    <body>
+        <div class="container">
+                <header>
+                    <h2 class="textCenter">freeCodeCamp Survey Form</h2>
+                    <p class="textCenter">Thank you for taking time to help us improve the platform</p>
+                </header>
+                <form >
+                    <div class="formItem">
+                        <label for="formName" >Name</label>
+                        <input class="form-control" type="text" name="name" id="formName" placeholder="Enter your name" required>
+                    </div>
+                    <div class="formItem">
+                        <label for="formEmail" >Email</label>
+                        <input class="form-control" type="email" name="email" id="formEmail" placeholder="Enter your Email" required>
+                    </div>
+                    <div class="formItem" >
+                        <label for="formAge">Age <span>(optional)</span></label>
+                        <input class="form-control" type="number" name="age" id="formAge" placeholder="Age">
+                    </div>
+                    <div class="formItem">
+                        <p>Whitch option best describes your current role?<p>
+                        <select name="yourRole" id="formYourRole" required>
+                            <option value="" disabled selected>Select current role</option>
+                            <option value="student">Student</option>
+                            <option value="fullTimeJob">Full time job</option>
+                        </select>
+                    </div>
+                    <div class="formItem">
+                        <p>Would you recommend freeCodeCamp to a friend?</p>
+                        <label for="definitely" class="selectLabel"><input type="radio" name="recommend" id="definitely" required>Definitely</label>
+                        <label for="maybe" class="selectLabel"><input type="radio" name="recommend" id="maybe">Maybe</label>
+                        <label for="notSure" class="selectLabel"><input type="radio" name="recommend" id="notSure">Not Sure</label>
+                    </div>
+                    <div class="formItem">
+                        <p>What's your favorite feature?</p>
+                        <select name="feature" id="formFeature" required>
+                            <option selected disabled>Select an option</option>
+                            <option value="challenges">Challenges</option>
+                            <option value="projects">Projects</option>
+                        </select>
+                    </div>
+                    <div class="formItem">
+                        <p>What would you like to see improved?</p>
+                        <label for="videos" class="selectLabel"><input type="checkbox" name="likeToSee" id="videos">Videos</label>
+                        <label for="wiki" class="selectLabel"><input type="checkbox" name="likeToSee" id="wiki">Wiki</label>
+                        <label for="forum" class="selectLabel"><input type="checkbox" name="likeToSee" id="forum">Forum</label>
+                    </div>
+                    <div class="formItem">
+                        <p>Any comments?</p>
+                        <textarea name="comments" id="formComments" cols="30" rows="8" placeholder="Enter your comment here"></textarea>
+                    </div>
+                    <div class="fromItem">
+                        <button type="submit" id="formSubmit">Submit</button>
+                    </div>
+                </form>
+        </div>
+    </body>
+</html>

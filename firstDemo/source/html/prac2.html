@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>练习2-相对单位</title>
+        <link rel="stylesheet" href="../styles/templateStyle.css" type="text/css"> 
+        <link rel="stylesheet" href="../styles/prac2.css" type="text/css">
+    </head>
+    <body>
+        <header>
+            <h1>练习2-相对单位</h1>
+            <p>在下面的区域进行练习，或回到<a href="../../index.html">首页</a></p>
+        </header>
+        <hr/>
+        <div id="pracArea">
+            <div id="item1" class="item">
+            <h2>em和rem</h2>
+            <p>可以使用rem设置字号，px设置边框，em设置其他大部分属性</p>
+            <div class="box small-box">这里是个小盒子</div>
+            <div class="box large-box">这里是个大盒子</div>
+            </div>
+            <hr/>
+            <div id="item2" class="item">
+                <h2>构建响应式面板</h2>
+                <p><strong>媒体查询@</strong>以后再细看。<br>这里媒体查询宽度大于800px时，font-size改为1.2rem，覆盖：root声明的16px，宽度大于1200时，改为1.5rem，覆盖1.2rem </p>
+            </div>
+            <hr/>
+            <div class="item item3">
+                <h2>使用视口单位创建图形和设置字号</h2>
+               <div id="square">这个正方形不会跑到视口之外</div>
+            </div>
+            <hr/>
+            <div class="item item4">
+                <h2>使用vw定义字号,使用无单位值设置行高line-height</h2>
+                <pre>	
+            b. 使用vw定义字号
+            i. 使用vw定义字号在缩放时有更平滑的过渡，问题是在不同大小的屏幕上字号差距太大了。
+            ii. 使用 calc() 定义字号
+            1) calc() 函数内可以对两个及以上的值进行基本运算。
+            注意：加号和减号两边必须有空白
+            2) 使用calc() 结合两种单位，例如：
+            :root { font-size: calc(0.5em + 1vw); }
+            0.5em保证了最小字号，1vw确保了字体的缩放
+            这样，在未使用媒体查询的情况下就实现了大部分响应式策略</pre>
+            <p>上面pre的font-size设置为calc(0.5em + 1vw);满足了多数情况下的响应式策略</p>
+            </div>
+        <hr>
+        <div class="item item5">
+            <h2>自定义属性</h2>
+            <p>自定义属性(CSS)变量部分留到看Javascript时再详细写</p>
+        </div>
+        </div>
+    </body>
+</html>

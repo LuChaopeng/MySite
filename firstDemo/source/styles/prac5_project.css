@@ -1,0 +1,148 @@
+:root{
+    box-sizing: border-box;
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+body{
+    background-color: #eee;
+}
+header{
+    width: 100%;
+    background-color: lightgrey;
+    position: fixed;
+    height: 70px;
+    left: 0;
+    top: 0;
+    text-align: right;
+}
+header img{
+    position: absolute;
+    left: 0;
+    top:10px;
+    height: 50px;
+    width: auto;
+}
+header a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    margin: 1em 1.6em;
+    padding: 1em 0;
+    line-height: 70px;
+}
+main{
+    display: flex;
+    flex-direction:column;
+    margin:70px auto 0 auto;
+    max-width: 70%;
+}
+.flexbox{
+    display: flex;
+    margin-bottom: 2em;
+}
+.start,.features{
+    flex-direction: column;
+    justify-content: center;
+}
+.start h2{
+    text-align: center;
+
+}
+.start form input{
+    display: block;
+    margin: 0 auto 1em auto;
+}
+#yourEmail{
+    width: 18em;
+    font-size: 1.1em;
+    padding: 0.2em;
+}
+.submitButton{
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 1.4em;
+    padding: 0.2em 1em;
+}
+.features>div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2em;
+}
+.features>div img{
+    width:80px;
+    height:80px;
+}
+.features>div .textArea{
+    margin-left: 5em;
+}
+.features h2,p{
+    margin: 0em auto;
+}
+.pricing{
+    justify-content: center;
+}
+.subFlex{
+    flex: 1 1 30%;
+    display: flex;
+    flex-direction: column;
+    margin-left:2em;
+    border: solid 2px;
+    border-radius: 0.2em;
+    padding:0;
+    align-items: center;
+}
+.subFlex p:first-child{
+    margin:0;
+    background-color: lightgrey;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 0.4em;
+    font-weight: bold;
+}
+.subFlex p:nth-child(2){
+    margin:0.5em auto;
+    font-size: 1.6em;
+    font-weight: bolder;
+}
+.subFlex ul{
+    margin:0 auto 1em auto;
+    padding-left: 0;
+}
+.subFlex ul li{
+    list-style: none;
+    text-align: center;
+}
+.subFlex button{
+    margin-bottom: 1em;
+    min-width: 35%;
+    padding: 0.4em 1em;
+    font-size: 1.2em;
+}
+.button{
+    background-color: orange;
+    cursor: pointer;
+    border-radius: 0.2em;
+    border-style: none;
+}
+.button:hover{
+    background-color: rgb(255,125,0);
+}
+footer{
+    background-color: lightgrey;
+    padding: 0.5em;
+    text-align: right;
+}
+.contact div a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.3em;
+    margin: 0 0 0 1em;
+}
+.contact div{
+    margin-bottom: 0.5em;
+}
+.contact p{
+    color:grey;
+}

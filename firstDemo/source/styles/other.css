@@ -1,0 +1,78 @@
+:root{
+    box-sizing: border-box;
+    font-size: 1.4em;
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+/* 这里使用猫头鹰选择器设置边距貌似不是很合适
+body * + *{
+    margin-top:1.5em;
+}
+*/
+body{
+    background-image: url("https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container{
+    margin: 2em auto 0 auto;
+    width: 720px;
+}
+.textCenter{                /*专为控制居中字段*/
+    text-align: center;
+    margin-top: 0.5em;
+    margin-bottom:0;
+}
+form{
+    background-color:rgba(204,204,255,0.6);
+    padding:1.5em 2em;
+    margin-top: 2em;
+    border-radius: 1em;
+}
+.form-control,select,textarea{              /*使一些input标签变块级，尝试使用过属性选择器，貌似更繁杂*/
+    display: block;
+    width: 100%;
+    border-radius: 0.3em;
+    margin-top: 0.5em;
+    padding:0.2em;
+    font-size:1rem;
+}
+.form-control:focus,select:focus,textarea:focus{
+    outline:0;
+    border-color:blue;
+}
+form > .formItem + .formItem{
+    margin-top: 1.5em;
+}
+p{
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+.selectLabel{                /*使某些标签分行，示例里使用了Flexbox(貌似是为了使radio圆点和文本对齐/写到后来发现这确实是个好方法)，这里只用block*/
+    display: block;
+    margin:0 auto 0.5em auto;      
+}
+button{
+    background-color: green;
+    color:white;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    font-size: 1rem;
+    display: block;
+    width: 100%;
+    margin: 1em auto 0 auto;
+}
+input[type="radio"],input[type="checkbox"]{
+width: 1.5em;   
+height: 1.5em;
+margin-right: 0.5em;
+cursor: pointer;
+}
+
+.container div:nth-child(3) span{
+    font-size: 0.8em;
+}
+

@@ -1,0 +1,10 @@
+*,::before,::after{
+    box-sizing:border-box;
+}
+header{
+    margin: 0;
+    padding: 0.5em 0;
+    background-color: #999999;
+    text-align: center;
+    border-radius: 15%
+}

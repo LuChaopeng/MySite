@@ -1,0 +1,142 @@
+:root{
+    box-sizing: border-box;
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+body{
+    margin: 0;
+}
+header{
+    background-color: #3366cc;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: stretch;
+    padding-right: 1em;
+}
+header a{
+    color: white;
+    font-size: 1.5em;
+    padding: 0.6em;
+    margin:0;
+    text-decoration: none;
+}
+header a:hover{
+    background-color: lightblue;
+}
+.hello{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    height: calc(100vh - 65px);
+    background-color: lightgrey;
+}
+.hello h1{
+    font-size: 4em;
+    font-weight: 900;
+    margin: 0;
+}
+.hello p{
+    font-size: 2em;
+    margin-top:0.2em;
+    font-weight: lighter;
+    color:#cc6600;
+}
+.projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ccccff;
+}
+.projects h2{
+    border-bottom:solid 3px;
+    font-size: 3em;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));  
+    max-width: 75vw;
+    grid-gap: 3em;
+    align-items:end;        /*项目垂直对齐：center*/
+}
+.grid-container a{
+    background-color:#ddd;
+    padding: 0;
+    text-decoration: none;
+    border-radius: 0.5em;
+}
+.bigger{
+    grid-column:span 2;
+}
+.grid-container figure{
+   
+    margin:0;
+}
+.grid-container figure img{
+    max-height: 400px;
+    width: 100%;       /*设置width：100%防止图片溢出。在auto-fit时，浏览器的很多操作我还不熟悉，加以限制保证页面的稳定响应*/
+}
+.grid-container figure figcaption{
+ 
+    font-size: 1.5em;
+    color: purple;
+    text-align: center;
+    padding: 0.3em;
+}
+.button a{
+    border: solid 3px;
+    display: block;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: bold;
+    background-color: #ddd;
+    color:purple;
+    padding: 0.3em 0.5em;
+    margin: 2em auto 5em auto;
+}
+.button a:hover{
+    background-color: #999;
+}
+.contact{
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color:white;
+    text-align: center;
+    padding: 14em 0;
+}
+.contact p:first-child{
+    font-size: 4em;
+    margin-top: 0em;
+    margin-bottom: 0;
+}
+.contact>p+p{
+    font-size: 1.2em;
+    font-style: italic;
+}
+.contact-way a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.4em;
+    margin:1.7em  0.8em;
+}
+footer{
+    background-color: #333;
+    border-top:solid 4px;
+    border-color: #3366cc;
+    padding: 1em 2em;
+}
+footer p{
+    display: inline-block;
+    color: white;
+    font-size: 1.2em;
+    margin-left: 6em;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}

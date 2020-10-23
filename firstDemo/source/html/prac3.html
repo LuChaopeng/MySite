@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>练习3-盒模型</title>
+        <link rel="stylesheet" href="../styles/templateStyle.css" type="text/css"> 
+        <link rel="stylesheet" href="../styles/prac3.css" type="text/css">
+    </head>
+    <body>
+        <header>
+            <h1>练习3-盒模型</h1>
+            <p>在下面的区域进行练习，或回到<a href="../../index.html">首页</a></p>
+        </header>
+        <hr/>
+        <div id="pracArea">
+            <div class="item item1">
+                <h2>实现等高列-CSS表格布局</h2>
+                <div class="table">
+                    <div class="tableCell">
+<p>我与父亲不相见已二年余了，我最不能忘记的是他的背影。那年冬天，祖母死了，父亲的差使也交卸了，正是祸不单行的日子，我从北京到徐州，打算跟着父亲奔丧回家。到徐州见着父亲，看见满院狼藉的东西，又想起祖母，不禁簌簌地流下眼泪。父亲说，“事已如此，不必难过，好在天无绝人之路！”</p>
+                    </div>
+                    <div class="tableCell">
+<p>回家变卖典质，父亲还了亏空；又借钱办了丧事。这些日子，家中光景很是惨淡，一半为了丧事，一半为了父亲赋闲。丧事完毕，父亲要到南京谋事，我也要回北京念书，我们便同行。</p>
+                    </div>
+                    <div class="tableCell">
+                        <p>　到南京时，有朋友约去游逛，勾留了一日；第二日上午便须渡江到浦口，下午上车北去。父亲因为事忙，本已说定不送我，叫旅馆里一个熟识的茶房陪我同去。他再三嘱咐茶房，甚是仔细。但他终于不放心，怕茶房不妥帖；颇踌躇了一会。其实我那年已二十岁，北京已来往过两三次，是没有甚么要紧的了。他踌躇了一会，终于决定还是自己送我去。我两三回劝他不必去；他只说，“不要紧，他们去不好！”</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item item2">
+                <h2>垂直居中内容</h2>
+                <div>
+                    <h3>1.相等的上下内边距</h3>
+                    <p class="setPadding">当元素的高度为自然高度时，设置相等的上下内边距可以content居中。给这一个段落设置一个宽度，不设置高度。给它设置相等的上下内边距，观察。</p>
+                </div>
+                <div>
+                    <h3>2.display:table-cell 加上 vertical-align:middle</h3>
+                    <div class="table">
+                        <div class="tableCellMiddle">
+    <p>我与父亲不相见已二年余了，我最不能忘记的是他的背影。那年冬天，祖母死了，父亲的差使也交卸了，正是祸不单行的日子，我从北京到徐州，打算跟着父亲奔丧回家。到徐州见着父亲，看见满院狼藉的东西，又想起祖母，不禁簌簌地流下眼泪。父亲说，“事已如此，不必难过，好在天无绝人之路！”</p>
+                        </div>
+                        </div>
+                </div>
+                <div>
+                    <h3>3.Flexbox</h3>
+                </div>
+                <div>
+                    <h3>4.行内元素设置行高，块级元素先inline-block再设置行高</h3>
+                    <div class="chDivLineHeight">
+                        <p class="chLineHeight">示例：这个是一个p元素，可以直接对其设置一个比较大的行高使内容居中了</p>
+                        <p>如果内容不是行内元素，可以先设置为inline-block.这个没有明确测试</p>
+                    </div>
+                </div>
+                <div>
+                    <h3>5.绝对定位</h3>
+                </div>
+                <div>
+                    <h3>6.绝对定位结合transform</h3>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

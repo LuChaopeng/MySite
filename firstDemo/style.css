@@ -1,0 +1,41 @@
+*,::before,::after{
+    box-sizing:border-box;
+}
+body{
+    font-size: calc(1vw + 0.3em);
+    font-family: "宋体","微软雅黑";
+}
+
+h1{
+    text-align: center;
+}
+.list{
+    max-width: 80vw;
+    width: 25em;
+    margin: auto;
+}
+.listItems{
+    background-color: #99ccff;
+    border-radius: 2vw;
+    padding: 0.3em;
+    margin:0.2em;
+    height: 2.2em;
+
+}
+.listItems a{
+    color:#cc9933;
+    text-decoration: none;
+    vertical-align: middle;
+    padding-left: 1em;
+}
+.listItems a:visited{
+    color:blue;
+}
+.listItems a:hover{
+    font-size: 1.1em;
+    font-weight: bold;
+}
+#h1desc{
+    font-size: 1.2em;
+    padding-left: 10vw;
+}

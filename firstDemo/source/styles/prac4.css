@@ -1,0 +1,60 @@
+*,::before,::after{
+    box-sizing:border-box;
+}
+header{
+    margin: 0;
+    padding: 0.5em 0;
+    background-color: #999999;
+    text-align: center;
+    border-radius: 15%;
+}
+
+#pracArea{
+    background-color: #999;
+}
+.container{
+    max-width: 90vw;
+    margin: auto;
+    padding:1em 0;
+}
+img{
+    width: 30%;
+    height: auto;
+    border-radius: 0.5em;
+    float: left;
+}
+.header{
+    background-color: lightblue;
+    border-radius: 1em;
+    padding: 1em;
+    margin-top: 0em;
+}
+.content{
+    background-color: white;
+    border-radius: 1em;
+}
+.contentTitle{
+    padding-top: 1em;
+    padding-left: 1em;
+}
+.sticker{
+    width:40vw ;
+    float: left;
+    background-color: lightgrey;
+    border-radius:1em;
+    margin: 1em;
+    padding: 1em;
+}
+.sticker .text{
+    overflow: auto;
+    padding-left: 1em;
+}
+main{
+    margin-top: 2em;
+    padding-left: 2em;
+}
+main::after{
+    display: block;
+    content: "";
+    clear: both;
+}
