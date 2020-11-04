@@ -1,6 +1,9 @@
 /*页面设计总结：
 将页面铺满：body{height:100vh;}不要有border和margin
 */
+/*
+问题：对.trans做的修改未能应用到移动设备。
+*/
 *,::before,::after{
     box-sizing: inherit;
     /*border: solid 1px;*/
@@ -54,7 +57,7 @@ main{
     position: fixed;
     top:5em;
     left: 0.2em;
-    width: 7em;
+    width: 6em;
     font-size: 1.5em;
 }
 .en,.dark{
