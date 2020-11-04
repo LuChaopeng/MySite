@@ -5,16 +5,26 @@
     box-sizing: inherit;
     /*border: solid 1px;*/
 }
+:root{
+    --bodyBGC:#323bbdc7;
+    --headerBGC: rgb(172, 176, 209);
+    --aColor:black;
+    --aHoverBGC: rgb(139, 145, 204);
+    --mainColor: white;
+    --enBGC:rgba(29, 19, 27, 0.25);
+    --enHoverBGC:rgba(29, 19, 27, 0.38);
+  
+}
 
 body{
     margin: 0;
     height:100vh;
-    background-color: #323bbdc7;
+    background-color:var(--bodyBGC);
 }
 header{
     display: flex;
     font-family: "微软雅黑";
-    background-color: rgb(172, 176, 209);
+    background-color:var(--headerBGC);
     margin: 0;
     font-size: 1.8em;
     justify-content: flex-end;
@@ -23,12 +33,12 @@ header a{
     line-height: 2em;
     flex-basis: 5em;
     text-decoration: none;
-    color:black;
+    color:var(--aColor);
     font-weight: bold;
     text-align: center;
 }
 header a:hover{
-    background-color: rgb(139, 145, 204);;
+    background-color:var(--aHoverBGC);
 }
 main{
     height:calc(100vh - 6rem);
@@ -36,8 +46,32 @@ main{
     flex-direction: column;
     justify-content: center;
     font-size: 4em;
+    font-family: "宋体";
     text-align: center;
-    color: white;
+    color:var(--mainColor);
+}
+.trans{
+    position: fixed;
+    top: 5em;
+    left: 0.1em;
+    width: 5.5em;
+    font-size: 1.5em;
+}
+.en,.dark{
+    border: solid 1px;
+    line-height: 1.5em;
+    padding: 0.3em 0;
+    margin: 0.3em 0 ;
+    text-align: center;
+    border-radius: 0.2em;
+    background-color:var(--enBGC);
+}
+.en:hover,.dark:hover{
+    background-color:var(--enHoverBGC);
+    cursor: pointer;
+}
+.hiddenLanguage{
+    display: none;
 }
 @media(max-width:450px){
     header{
@@ -48,5 +82,13 @@ main{
     }
     main{
         font-size: 2.4em;
+    }
+
+    .trans{
+        position: fixed;
+        bottom: 2em;
+        left: 0.1em;
+        width: 5.5em;
+        font-size: 1em;
     }
 }
