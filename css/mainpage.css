@@ -1,0 +1,52 @@
+/*页面设计总结：
+将页面铺满：body{height:100vh;}不要有border和margin
+*/
+*,::before,::after{
+    box-sizing: inherit;
+    /*border: solid 1px;*/
+}
+
+body{
+    margin: 0;
+    height:100vh;
+    background-color: #323bbdc7;
+}
+header{
+    display: flex;
+    font-family: "微软雅黑";
+    background-color: rgb(172, 176, 209);
+    margin: 0;
+    font-size: 1.8em;
+    justify-content: flex-end;
+}
+header a{
+    line-height: 2em;
+    flex-basis: 5em;
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+    text-align: center;
+}
+header a:hover{
+    background-color: rgb(139, 145, 204);;
+}
+main{
+    height:calc(100vh - 6rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 4em;
+    text-align: center;
+    color: white;
+}
+@media(max-width:450px){
+    header{
+        font-size:1.2em;
+    }
+    header a{
+        line-height: 3em;
+    }
+    main{
+        font-size: 2.4em;
+    }
+}
