@@ -1,0 +1,47 @@
+*,::before,::after{
+    box-sizing: inherit;
+    /*border: solid 1px;*/
+}
+:root{
+    --bodyBGC:#323bbdc7;
+    --headerBGC: rgb(172, 176, 209);
+    --aColor:black;
+    --aHoverBGC: rgb(139, 145, 204);
+    --enBGC:rgba(29, 19, 27, 0.25);
+    --enHoverBGC:rgba(29, 19, 27, 0.38);
+  
+}
+
+body{
+    margin: 0;
+    height:100vh;
+    background-color:var(--bodyBGC);
+}
+header{
+    display: flex;
+    font-family: "微软雅黑";
+    background-color:var(--headerBGC);
+    margin: 0;
+    font-size: 1.8em;
+    justify-content: flex-end;
+}
+header a{
+    line-height: 2em;
+    flex-basis: 5em;
+    text-decoration: none;
+    color:var(--aColor);
+    font-weight: bold;
+    text-align: center;
+}
+header a:hover{
+    background-color:var(--aHoverBGC);
+}
+
+@media(max-width:450px){
+    header{
+        font-size:1.2em;
+    }
+    header a{
+        line-height: 3em;
+    }
+}

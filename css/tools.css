@@ -1,0 +1,17 @@
+.listTitle{
+    font-size: 2em;
+    line-height: 2.6em;
+    text-align: center;
+}
+.list{
+    border: solid 2px;/*for test*/
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: auto;
+    width: 70vw;
+}
+.tool{
+    border: solid 2px;/*for test*/
+    margin-bottom: 1em;
+}
